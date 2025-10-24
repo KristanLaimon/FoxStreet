@@ -1,0 +1,11 @@
+/* prettier-ignore */
+body {
+  background-image: 
+    /* Layer 1 (on top of the image): A white color with 80% opacity */
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.8)),
+    /* Layer 2: Your original image */ 
+    url("../../resources/autumn_cute_background.jpg");
+
+  /* Layer 3 (farthest back): Full white background  (fallback if needed*/
+  background-color: white;
+}
