@@ -1,0 +1,25 @@
+.foxxytitle {
+  display: flex;
+  flex-direction: column;
+
+  /* Resetting style in case theres a h1 */
+  h1.titletext {
+    margin: 0;
+    padding: 0;
+  }
+
+  .titletext {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: var(--foxxybrowndarker);
+    font-size: 4.5rem;
+  }
+
+  .brown-box {
+    margin: 0 auto;
+    height: 0.5rem;
+    width: 15rem;
+    background-color: var(--foxxybrowndarker);
+  }
+}

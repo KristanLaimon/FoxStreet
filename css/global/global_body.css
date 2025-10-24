@@ -1,0 +1,12 @@
+/* Removing arbitrary margin and padding from browsers */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1150px;
+  min-height: 100vh;
+}

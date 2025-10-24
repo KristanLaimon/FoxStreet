@@ -3,36 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Basic Styles -->
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/global/global_background.css" />
+    <link rel="stylesheet" href="./css/global/standard.css" />
+
+    <!-- Component Styles -->
     <link rel="stylesheet" href="./css/components/foxxyheader.css" />
+    <link rel="stylesheet" href="./css/components/foxxytitle.css" />
+
+    <!-- This page specific styles -->
+    <link rel="stylesheet" href="./css/pages/index/index.css" />
     <title>Foxxy Street - Main Page</title>
   </head>
   <body>
-    <!-- =================== Foxxyheader.html ===================== -->
+    <!-- =================== foxxyxheader.html ===================== -->
     <!-- Import with CSS "foxxyheader.css" -->
-    <header id="foxxyheader">
+    <header class="foxxyheader">
       <div class="blank-space"></div>
-      <!-- --- Left (Title) --- -->
       <section class="main-content">
+        <!-- --- Left (Title) --- -->
         <section class="left">
           <div class="brown-box">
-            <img class="shyfoximg" src="./resources/foxxy_blushed.png" alt="" />
+            <img class="shyfoximg" src="./resources/foxxy_blushed.png" alt="foxxy_blushed_sticker_logo_page" />
             <p class="title">Fox street</p>
           </div>
         </section>
         <!-- ----  Right (Options) ---- -->
-        <section class="right">
+        <nav class="right">
           <a class="link"> Home </a>
           <a class="link"> Características </a>
           <a class="link"> Tipos de zorros </a>
           <a class="link"> Concientización </a>
           <a class="link"> Videos </a>
-        </section>
+        </nav>
       </section>
       <div class="blank-space"></div>
       <div class="brown-space"></div>
     </header>
     <!-- ================ END FOX HEADER ==================== -->
+    <!-- 
+    
+
+
+    -->
+    <!-- =============== BEGIN foxxytitle.html ==================== -->
+    <!-- Import with CSS "foxxytitle.css" -->
+    <section class="foxxytitle">
+      <h1 class="titletext">Fox Street</h1>
+      <div class="brown-box"></div>
+    </section>
+    <!-- =============== END foxxytitle.html ==================== -->
+    <!-- 
+    
+    
+    
+    
+    -->
+    <!-- ====== HOME CONTENT ======= -->
+    <main id="index-main">
+      <!-- --- LEFT (Bienvenidos!) --- -->
+      <section class="left">
+        <!-- Main card -->
+        <div class="main-card">
+          <!-- Header -->
+          <div class="header">
+            <img class="foxxy-hi-img" src="./resources/foxxy_hi.png" alt="foxxy_hi_sticker_logo" />
+            <h2 class="title">Bienvenidos</h2>
+          </div>
+          <!-- Main content -->
+          <div class="content">
+            <div class="texts">
+              <p class="text-1">A fox street!</p>
+              <p class="text-2">
+                Esta es una página sencilla para demostrar lo aprendido en las unidades 1 y 2 para la materia de
+                <strong class="programacion-web">Programación Web</strong>!
+              </p>
+            </div>
+            <div class="furry-footer">
+              <!-- Black rectangle to left -->
+              <div class="black-vertical-rectangle"></div>
+              <div class="test"></div>
+              <!-- TECNM Furry Logo -->
+              <img
+                class="furry-tecnm-image"
+                src="./resources/furry_tecnm_logo_transparent.png"
+                alt="furry_tecnológico_logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Left section footer -->
+        <div class="left-footer">
+          <p class="text">Hecho por: Kristan Ruíz Limón</p>
+        </div>
+      </section>
+      <!-- --- MIDDLE --- -->
+      <section class="middle"></section>
+      <!-- --- RIGHT --- -->
+      <section class="right"></section>
+    </main>
+    <!-- ====== END HOME CONTENT ======= -->
   </body>
 </html>
