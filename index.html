@@ -13,7 +13,8 @@
 
     <!-- This page specific styles -->
     <link rel="stylesheet" href="./css/pages/index/index.css" />
-    <title>Foxxy Street - Main Page</title>
+    <title>Foxxy Street - Home</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- =================== foxxyxheader.html ===================== -->
@@ -30,11 +31,11 @@
         </section>
         <!-- ----  Right (Options) ---- -->
         <nav class="right">
-          <a class="link"> Home </a>
-          <a class="link"> Características </a>
-          <a class="link"> Tipos de zorros </a>
-          <a class="link"> Concientización </a>
-          <a class="link"> Videos </a>
+          <a class="link" href="/"> Home </a>
+          <a class="link" href="/pages/peculiaritys.html"> Características </a>
+          <a class="link" href="/pages/types.html"> Tipos de zorros </a>
+          <a class="link" href="/pages/petsconsideration.html"> Concientización </a>
+          <a class="link" href="/pages/videos.html"> Videos </a>
         </nav>
       </section>
       <div class="blank-space"></div>
@@ -44,7 +45,7 @@
     <!-- 
     
 
-
+    
     -->
     <!-- =============== BEGIN foxxytitle.html ==================== -->
     <!-- Import with CSS "foxxytitle.css" -->
@@ -59,7 +60,7 @@
     
     
     -->
-    <!-- ====== HOME CONTENT ======= -->
+    <!-- ====== HOME CONTENT (Specific to this page)======= -->
     <main id="index-main">
       <!-- --- LEFT (Bienvenidos!) --- -->
       <section class="left">
@@ -95,13 +96,71 @@
 
         <!-- Left section footer -->
         <div class="left-footer">
-          <p class="text">Hecho por: Kristan Ruíz Limón</p>
+          <p class="text">| Hecho por: Kristan Ruíz Limón</p>
+          <p class="text">| 7mo semestre | Programación web</p>
         </div>
       </section>
       <!-- --- MIDDLE --- -->
-      <section class="middle"></section>
+      <section class="middle">
+        <!-- Paper floating with imgs stamps -->
+        <div class="paper-post-it">
+          <img class="foxxy-sticker-grrrr" src="./resources/foxxy_grrrr.png" alt="foxxy_sticker_grrrr" />
+          <img class="white-post-it-image" src="./resources/resource_white_notes_ready.png" alt="white_note_postit" />
+
+          <div class="quote-section">
+            <p class="quote-text">"Pienso, luego existo"</p>
+            <p class="quote-author">- Foxé descartes</p>
+          </div>
+        </div>
+
+        <!-- My fursona -->
+        <img class="krs-fursona-img" src="./resources/kris_fursona_fullbody.png" alt="krs_fursona_fullbody" />
+      </section>
       <!-- --- RIGHT --- -->
-      <section class="right"></section>
+      <section class="right">
+        <!-- temporal -->
+        <div class="main-card">
+          <img class="fursona-hand-only" src="./resources/kris_fursona_hand_only.png" alt="krs_fursona_hand" />
+          <img class="foxxy-hmph-img" src="./resources/foxxy_hmph.png" alt="foxxy_sticker_hmph" />
+          <p class="text">
+            Fox street es una fan page dedicado para contemplar la conciencia animal y el disfrute de la naturaleza con
+            énfasis en la especie de los <strong>zorros</strong>
+          </p>
+        </div>
+
+        <div class="pages-i-like">
+          <!-- Title with cute fox img -->
+          <div class="header">
+            <img class="fox-giving-flower" src="./resources/flower_fox_giving.png" alt="fox_giving_you_a_flower" />
+            <p class="text">Páginas que me gustan</p>
+          </div>
+          <div class="page-banners">
+            <a href="https://nicegirlslumber.neocities.org/" target="_blank" rel="noopener noreferrer">
+              <img
+                class="pagelike-nicegirslumber banner"
+                src="./resources/page_i_like_nicegirlslumber.png"
+                alt="page_i_like_nicegirlslumber"
+              />
+            </a>
+            <a href="https://kingslogicrlss.site/" target="_blank" rel="noopener noreferrer">
+              <img
+                class="pagelike-kingsoflogic banner"
+                src="./resources/page_i_like_kingsoflogic.png"
+                alt="page_i_like_kingsoflogic"
+              />
+            </a>
+            <a href="https://ne0nbandit.art/home" target="_blank" rel="noopener noreferrer">
+              <img
+                class="pagelike-neonbandit banner"
+                src="./resources/page_i_like_neonbandit.png"
+                alt="page_i_like_neonbandit"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <img class="fox-background-black" src="./resources/black_transparent_fox.png" alt="black_transparentfox" />
     </main>
     <!-- ====== END HOME CONTENT ======= -->
   </body>

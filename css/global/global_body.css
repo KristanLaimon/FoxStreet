@@ -8,5 +8,6 @@
 
 body {
   min-width: 1150px;
-  min-height: 100vh;
+  min-height: 725px;
+  height: 100vh;
 }

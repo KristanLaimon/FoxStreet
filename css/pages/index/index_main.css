@@ -1,5 +1,22 @@
+/* Specific to this page only */
+body {
+  display: flex;
+  flex-direction: column;
+
+  .fox-background-black {
+    position: absolute;
+    right: -2rem;
+    bottom: 1.2rem;
+    z-index: -1;
+    width: 20%;
+  }
+}
+
 #index-main {
   display: grid;
+  position: relative;
+  flex-grow: 1;
+
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   gap: 3rem;

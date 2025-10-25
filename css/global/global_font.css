@@ -3,6 +3,11 @@
   src: url("../../fonts/Jersey10-Regular.ttf");
 }
 
+@font-face {
+  font-family: JacquardaBastarda9;
+  src: url("../../fonts/JacquardaBastarda9-Regular.ttf");
+}
+
 *,
 *::after,
 *::before {

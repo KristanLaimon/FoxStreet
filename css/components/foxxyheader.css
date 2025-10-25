@@ -48,6 +48,12 @@
           left: 10%;
           height: 120%;
           width: auto;
+          cursor: pointer;
+
+          &:hover {
+            scale: 1.1;
+            rotate: 45;
+          }
         }
       }
     }
@@ -70,6 +76,11 @@
 
         background-color: var(--foxxydarkgray);
         color: var(--foxxybrownlight);
+
+        &:hover {
+          scale: 1.1;
+          transition: all 0.5s;
+        }
       }
     }
   }
