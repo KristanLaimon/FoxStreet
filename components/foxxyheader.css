@@ -1,0 +1,92 @@
+@import "../css/global/global_colors.css";
+
+.foxxyheader {
+  --FOXXYHEADER-HEIGHT: 5.2rem;
+  --FOXXYHEADER-SPACE-HEIGHT: 0.5rem;
+
+  .blank-space {
+    height: var(--FOXXYHEADER-SPACE-HEIGHT);
+  }
+
+  .main-content {
+    overflow-x: hidden;
+    background-color: var(--foxxybrown);
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 1fr;
+    height: var(--FOXXYHEADER-HEIGHT);
+
+    .left {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      .brown-box {
+        position: relative;
+        border-radius: 0 8px 8px 0;
+
+        height: auto;
+        width: 100%;
+
+        padding: 0.5rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        background-color: var(--foxxybrowndarker);
+
+        .title {
+          color: white;
+          font-size: 2.5rem;
+          padding-right: 1.5rem;
+        }
+
+        .shyfoximg {
+          position: absolute;
+          left: 10%;
+          height: 120%;
+          width: auto;
+          cursor: pointer;
+
+          &:hover {
+            scale: 1.1;
+            rotate: 45;
+          }
+        }
+      }
+    }
+
+    .right {
+      height: var(--FOXXYHEADER-HEIGHT);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 1rem;
+      padding: 0 1.5rem;
+
+      .link {
+        display: inline;
+        font-size: 1.8rem;
+        padding: 0.3rem 0.5rem;
+        border-radius: 4px;
+        white-space: nowrap;
+
+        background-color: var(--foxxydarkgray);
+        color: var(--foxxybrownlight);
+
+        &:hover {
+          scale: 1.1;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+
+  .brown-space {
+    height: calc(var(--FOXXYHEADER-SPACE-HEIGHT) - 0.15rem); /* Half the space */
+    background-color: var(--foxxybrown);
+  }
+}

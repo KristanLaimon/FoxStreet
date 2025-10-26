@@ -1,0 +1,72 @@
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#videos-main-content {
+  flex-grow: 1; /* This makes it fill the space left by the header */
+  position: relative;
+  display: grid;
+  margin-top: 0.3rem;
+  row-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 25%;
+
+  /* Add overflow: hidden to the grid container */
+  /* This ensures its children don't "break out" */
+  overflow: hidden;
+}
+
+.videos-row {
+  display: grid;
+  padding: 0 10rem;
+  grid-template-columns: 1fr 60.4% 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+
+  .fox-video {
+    border-radius: 12px;
+  }
+}
+
+.videos-row .fox-video {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  overflow: hidden;
+
+  background-color: var(--foxxybrownalternative);
+  margin: 0 8rem;
+  z-index: 0;
+  border-radius: 20px 20px 0 0;
+
+  .comment {
+    z-index: 2;
+    height: 70%; /* Fit to 90% of the footer's height */
+    width: auto;
+    object-fit: contain; /* Keeps aspect ratio, no stretching */
+  }
+}
+
+.fursona {
+  position: fixed;
+  bottom: -17.5rem;
+  left: -4.4rem;
+  rotate: 8deg;
+  opacity: 40%;
+  height: auto;
+  width: 15rem;
+  z-index: 1;
+}
