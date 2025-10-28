@@ -1,3 +1,4 @@
+@import "./global_colors.css";
 /* prettier-ignore */
 body {
   background-image: 
@@ -7,5 +8,5 @@ body {
     url("../../resources/autumn_cute_background.jpg");
 
   /* Layer 3 (farthest back): Full white background  (fallback if needed*/
-  background-color: white;
+  background-color: var(--foxxydarkreact);
 }
