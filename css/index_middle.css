@@ -48,6 +48,8 @@
 
       width: 47%;
       height: auto;
+
+      animation: floatingAndRotating 12s ease-in-out infinite;
     }
   }
 }
