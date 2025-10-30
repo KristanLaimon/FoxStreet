@@ -1,0 +1,105 @@
+@import "../css/global/global_colors.css";
+@import "../css/omar_library.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#petsconsideration-main-container {
+  width: auto;
+  flex-grow: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.8rem;
+  margin: 0 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  /* img {
+    width: 12rem;
+    height: auto;
+  } */
+
+  .brown-banner {
+    background-color: VAR(--foxxymegafoxfoxfox);
+    padding: 0.8rem;
+    border-radius: 15px;
+
+    .text {
+      color: VAR(--foxxydarkreact);
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+
+  .left-side {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+
+    .white-decoration-background {
+      --WHITE-DECORATION-WIDTH: 60%;
+      position: absolute;
+      width: VAR(--WHITE-DECORATION-WIDTH);
+      height: 100%;
+      background-color: white;
+      top: 0;
+      left: calc(50% - VAR(--WHITE-DECORATION-WIDTH) / 2);
+      z-index: -1;
+      border-radius: 12px;
+    }
+
+    .foxxy-sorry-img {
+      width: 60%;
+      margin: 0 auto;
+      height: auto;
+    }
+  }
+
+  .middle-side {
+    display: flex;
+    .wildfox {
+      width: auto;
+      height: 80%;
+      margin: auto auto;
+      animation: floatingAndRotating 12s ease-in-out infinite;
+    }
+  }
+
+  .right-side {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    .white-decoration-background {
+      --WHITE-DECORATION-WIDTH-2: 60%;
+      background-color: white;
+      border-radius: 12px;
+
+      width: VAR(--WHITE-DECORATION-WIDTH-2);
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      left: calc(50% - (VAR(--WHITE-DECORATION-WIDTH-2) / 2));
+      z-index: -1;
+    }
+
+    .foxxy-please-img {
+      width: 68%;
+      margin: 0 auto;
+      height: auto;
+    }
+  }
+}
