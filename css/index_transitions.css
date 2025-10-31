@@ -1,0 +1,39 @@
+/* =============================================== */
+.foxxy-hi-img {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.foxxy-hi-img:hover {
+  transform: rotate(12deg) scale(1.2) translateY(-5px); /* Se hace un poco más grande y sube */
+  cursor: pointer;
+}
+/* =============================================== */
+.foxxy-hmph-img {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.foxxy-hmph-img:hover {
+  transform: rotate(10deg) scale(1.1);
+  cursor: pointer;
+}
+
+/* =============================================== */
+.foxxy-sticker-grrrr {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10;
+}
+
+.foxxy-sticker-grrrr:hover {
+  transform: rotate(-8deg) scale(1.1);
+  cursor: pointer;
+}
+
+/* =============================================== */
+.shyfoximg {
+  transition: transform 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 100;
+}
+
+.shyfoximg:hover {
+  transform: rotate(8deg) translateY(-5px);
+}
