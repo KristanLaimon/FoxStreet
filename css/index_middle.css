@@ -44,10 +44,10 @@
 
     .krs-fursona-img {
       position: absolute;
-      bottom: 0;
+      bottom: 1.3rem;
       left: 25%; /* Almost half the space left by width: 50%*/
 
-      width: 47%;
+      width: 44%;
       min-width: 200px;
       height: auto;
       z-index: 2;

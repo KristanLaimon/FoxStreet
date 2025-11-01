@@ -1,5 +1,10 @@
 @import "./global/global_colors.css";
 
+body {
+  --SPRITE-HEIGHT: 43px;
+  --SPRITE-WIDTH: 59px;
+}
+
 #index-main {
   .right {
     display: flex;
@@ -57,6 +62,25 @@
       }
     }
 
+    #sprite {
+      /* border: solid 1px black; */
+      background: url("../resources/fox_spritesheet.png") no-repeat;
+      height: VAR(--SPRITE-HEIGHT);
+      width: VAR(--SPRITE-WIDTH);
+      animation: fox-movement 1s steps(6) infinite;
+      transform: scale(3.3);
+      image-rendering: pixelated;
+      z-index: 2;
+      transform-origin: bottom right;
+      justify-self: flex-end;
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    #sprite:hover {
+      transform: scale(3.7) rotate(-1deg);
+    }
+
     .pages-i-like {
       .header {
         position: relative;
@@ -100,5 +124,11 @@
         }
       }
     }
+  }
+}
+
+@keyframes fox-movement {
+  to {
+    background-position: calc(VAR(--SPRITE-WIDTH) * -6) 0px;
   }
 }
